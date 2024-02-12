@@ -2,13 +2,22 @@ import "./assets/main.css";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-
-import { DataPaneWebComponent } from "web-components";
-
-customElements.define("data-pane", DataPaneWebComponent);
-
 import App from "./App.vue";
 import router from "./router";
+
+import {
+  DataPaneWebComponent,
+  ChartButtonsWebComponent,
+  RadarsPaneWebComponent,
+  ForecastPaneWebComponent,
+  EnsiPaneWebComponent,
+} from "web-components";
+
+customElements.define("data-pane", DataPaneWebComponent);
+customElements.define("chart-buttons", ChartButtonsWebComponent);
+customElements.define("radars-pane", RadarsPaneWebComponent);
+customElements.define("forecast-pane", ForecastPaneWebComponent);
+customElements.define("ensi-pane", EnsiPaneWebComponent);
 
 const app = createApp(App);
 
