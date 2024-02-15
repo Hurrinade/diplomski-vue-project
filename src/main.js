@@ -11,6 +11,7 @@ import {
   RadarsPaneWebComponent,
   ForecastPaneWebComponent,
   EnsiPaneWebComponent,
+  ChartComponentWebComponent,
 } from "web-components";
 
 customElements.define("data-pane", DataPaneWebComponent);
@@ -18,6 +19,7 @@ customElements.define("chart-buttons", ChartButtonsWebComponent);
 customElements.define("radars-pane", RadarsPaneWebComponent);
 customElements.define("forecast-pane", ForecastPaneWebComponent);
 customElements.define("ensi-pane", EnsiPaneWebComponent);
+customElements.define("chart-component", ChartComponentWebComponent);
 
 const app = createApp(App);
 
