@@ -1,0 +1,93 @@
+/* CSS of place name icon and it's date */
+.main-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 55rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(2rem);
+  /* background: #141416; */
+  background: #3664be;
+}
+
+.data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 25rem;
+  height: 55rem;
+}
+
+.data-navigation {
+  height: 15rem;
+}
+
+main {
+  height: 45rem;
+}
+
+.data-navigation .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-navigation .buttons button {
+  border: none;
+  background-color: #1b1c1e;
+  color: #a0a0a0;
+  width: 6rem;
+  height: 2rem;
+  font-size: 18px;
+  margin: 0.5rem;
+  font-family: poppins;
+}
+
+.data-navigation .buttons button:hover {
+  color: #889ce7;
+  cursor: pointer;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.place-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.place-name {
+  font-size: 2.1em;
+  font-weight: 600;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 70px;
+  color: white;
+}
+
+.place-weather {
+  display: flex;
+}
+
+.place-date {
+  margin-top: 1rem;
+}
+
+.weather-type-icon {
+  width: 70px;
+  height: 70px;
+
+  /*Outline around png weather icons*/
+  -webkit-filter: drop-shadow(0.1px 0.1px 0 black)
+    drop-shadow(-0.1px -0.1px 0 black);
+  filter: drop-shadow(0.1px 0.1px 0 black) drop-shadow(-0.1px -0.1px 0 black);
+}

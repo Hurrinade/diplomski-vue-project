@@ -10,7 +10,15 @@
     <div class="main-panes">
       <data-pane :location.prop="'Vrapce'" />
       <chart-buttons @chart="openChart" />
-      <data-pane :location.prop="'Mlinovi'" />
+      <data-pane
+        :location.prop="'Mlinovi'"
+        :styles.prop="[
+          '/src/assets/dataPane.css',
+          '/src/assets/simplePane.css',
+        ]"
+      >
+        <button>Some extra data that user wants</button>
+      </data-pane>
       <radars-pane />
     </div>
     <forecast-pane></forecast-pane>
